@@ -9,9 +9,9 @@ pub struct MediaDate {
 }
 
 impl MediaDate {
-    /// Destination subfolder: `YYYY/MM`
+    /// Destination subfolder: `YYYY/YYYY.MM`
     pub fn subdir(&self) -> PathBuf {
-        PathBuf::from(&self.year).join(&self.month)
+        PathBuf::from(&self.year).join(format!("{}.{}", self.year, self.month))
     }
 
     /// New filename stem: `YYYY.MM.DD_<time>`

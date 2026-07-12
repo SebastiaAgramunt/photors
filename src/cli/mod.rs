@@ -50,7 +50,7 @@ pub enum Commands {
     /// Launch the interactive TUI
     Ui,
 
-    /// Organize media files into dest/YYYY/MM/ based on EXIF date
+    /// Organize media files into dest/YYYY/YYYY.MM/ based on EXIF date
     Organize {
         /// Source directory
         src: PathBuf,

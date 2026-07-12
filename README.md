@@ -7,7 +7,7 @@ Scan your photo library, organize files into date-based folders, find duplicates
 ## Features
 
 - **Scan** — list media files in a directory, with EXIF metadata (date, camera, GPS)
-- **Organize** — move or copy files into `YYYY/MM/` folders based on EXIF date, with filename fallback for videos
+- **Organize** — move or copy files into `YYYY/YYYY.MM/` folders based on EXIF date, with filename fallback for videos
 - **Dedup** — find and remove duplicate files using SHA-256 content hashing
 - **Interactive TUI** — keyboard-driven interface built with [ratatui](https://github.com/ratatui-org/ratatui)
 
@@ -45,7 +45,7 @@ photors scan ~/Photos --recursive --exts jpg,jpeg,heic
 
 ### Organize
 
-Move (or copy) files into `dest/YYYY/MM/YYYY.MM.DD_HHMMSS.ext`.
+Move (or copy) files into `dest/YYYY/YYYY.MM/YYYY.MM.DD_HHMMSS.ext`.
 
 ```
 # Preview what would happen
