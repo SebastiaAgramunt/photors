@@ -13,6 +13,14 @@ Scan your photo library, organize files into date-based folders, find duplicates
 
 ## Installation
 
+Install the `photors` binary to `~/.cargo/bin` (make sure that's on your `PATH`):
+
+```
+cargo install --path .
+```
+
+Or build it locally without installing:
+
 ```
 cargo build --release
 ```
